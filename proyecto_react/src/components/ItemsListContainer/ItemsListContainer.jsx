@@ -1,9 +1,9 @@
 import "./bienvenido.css"
 
-function ItemsListContainer(props) {
+function ItemsListContainer({texto}) {
   return (
     <>
-      <h1 className="bienvenido" >{props.texto}</h1>
+      <h1 className="text-4xl text-center bienvenido mt-3" >{texto}</h1>
     </>
   )
 }
