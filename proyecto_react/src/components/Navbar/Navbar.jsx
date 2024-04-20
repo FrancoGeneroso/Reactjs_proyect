@@ -5,7 +5,7 @@ import CartWidget from "../CartWidget/CartWidget"
 
 
 
-function Navbar() {
+function Navbar({children}) {
   return (
     <>
       <nav className='navbar'>
@@ -16,7 +16,9 @@ function Navbar() {
           <li className='navbar-items'><a className='ancla-items' href="#">CONTACTO</a></li>
           <li className='navbar-items'><a className='ancla-items' href="#">AYUDA</a></li>
         </ul>
-        <CartWidget/>
+        <div>
+          {children}
+        </div>
         
       </nav>
     </>
