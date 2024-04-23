@@ -1,39 +1,60 @@
 [{
     "id": 1,
-    "title": "Titulo 1",
+    "title": "Pantalon Mom",
     "image": "/src/assets/imagen-uno.jpg",
-    "descripcion": "Pantalon Mom 100% algodon",
-    "precio": 45000,
+    "description": "Pantalon Mom 100% algodon",
+    "price": 45000,
     "stock": 10,
-    "categoria": "pantalon"
+    "category": "pantalon"
 },
 
 {
     "id": 2,
-    "title": "Titulo 2",
+    "title": "Remera Gris Acero",
     "image": "/src/assets/imagen-dos.jpg",
-    "descripcion": "Remera oversize",
-    "precio": 40000,
+    "description": "Remera oversize en algodon genuino",
+    "price": 42000,
     "stock": 5,
-    "categoria": "remera"
+    "category": "remera"
 },
 {
     "id": 3,
-    "title": "Titulo 3",
+    "title": "Gorra Gabardina",
     "image": "/src/assets/imagen-tres.jpg",
-    "descripcion": "Remera kimono",
-    "precio": 46000,
+    "description": "Gorro Gabardina verde militar",
+    "price": 32000,
     "stock": 10,
-    "categoria": "remera"  
+    "category": "gorro"  
 },
 {
-    "id": 3,
-    "title": "Titulo 3",
+    "id": 4,
+    "title": "Piluso Stone Washed",
     "image": "/src/assets/imagen-cuatro.jpg",
-    "descripcion": "Remera kimono",
-    "precio": 47000,
+    "description": "Piluso confeccionado en gabardina de 08 onzas ",
+    "price": 35000,
     "stock": 7,
-    "categoria": "remera"  
+    "category": "gorro"  
+},
+
+{
+    "id": 5,
+    "title": "Botas Ferghana",
+    "image": "/src/assets/imagen-cinco.jpg",
+    "description": "Botas con capas de cuero, gamuza y los agregados únicos a los costados proveerán textura y movimiento al tu look",
+    "price": 60000,
+    "stock": 5,
+    "category": "zapatos"  
+},
+
+{
+    "id": 6,
+    "title": "Remera Oversized verde ingles",
+    "image": "/src/assets/imagen-seis.jpg",
+    "description": "Camiseta confeccionada en algodón genuino. Cuello clasico redondo",
+    "price": 38900,
+    "stock": 10,
+    "category": "remera"  
 }
+
 
 ]

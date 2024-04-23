@@ -1,46 +1,44 @@
 
-
-.navbar{
+.navbar {
     display: flex;
     height: 80px;
     background-color: black;
-    justify-content: center;
-    
-    
-}
-
-.navbar-links{
+    justify-content: space-between;
+  }
+  
+  .navbar-links {
     list-style: none;
     display: flex;
     color: white;
     align-items: center;
-    
-}
-
-.navbar-items{    
+  }
+  
+  .navbar-items {
     margin-right: 1.2rem;
-    position: relative;           
-
-}
-
-.logo{
+    position: relative;
+  }
+  
+  .logo {
     width: 160px;
-}
-.navbar a:hover{
+    margin-left: 20px;
+  }
+  
+  .navbar a:hover {
     color: orange;
-}
-
-.ancla-items{
-    color: white ;
+  }
+  
+  .ancla-items {
+    color: white;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2rem;
-    
-}
-
-.carrito{
+  }
+  
+  .carrito {
     position: relative;
     top: 20px;
-    
-}
+  }
 
+  .carrito-position{
+    padding-right: 20px;
+  }
