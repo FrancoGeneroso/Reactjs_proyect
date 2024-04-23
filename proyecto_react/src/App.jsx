@@ -5,6 +5,7 @@ import CartWidget from "./components/CartWidget/CartWidget"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Inicio from "./components/Inicio/Inicio"
 
+
 import "./index.css"
 
 

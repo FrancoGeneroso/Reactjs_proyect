@@ -1,3 +1,23 @@
+body{
+  background-color: antiquewhite;
+}
+
+.bienvenido{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  
+}
+
+.itemContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
 .item-detail {
     max-width: 500px;
     margin-bottom: 20px;

@@ -1,15 +1,15 @@
 import { useState,useEffect } from "react"
-import ItemDetail from "../ItemDetail/ItemDetail"
+import ItemList from "./ItemList"
 
 
 
-import "./bienvenido.css"
+import "./item.css"
 
 
 function ItemsListContainer({texto}) 
  
  {
-  const [productos,setProductos]=useState([])
+  const [products,setProducts]=useState([])
   
   useEffect(() => {
     fetch("https://run.mocky.io/v3/ec8e8c2a-92bd-4a2b-9368-83cec493b119")
@@ -19,7 +19,7 @@ function ItemsListContainer({texto})
         }
         return response.json()
       })
-      .then(data=>{setProductos(data)})
+      .then(data=>{setProducts(data)})
       .catch(error=>{"Error",error})
   ,[]}
       
@@ -28,11 +28,7 @@ function ItemsListContainer({texto})
     return (
       <>
       <h1 className="text-4xl text-center bienvenido mt-3" >{texto}</h1>
-      <div className="itemContainer">
-        {productos && productos.map((product) => (<ItemDetail key={product.id} item={product} />
-          ))}
-      </div>
-         
+      <ItemList products={products}/>      
        
       </>
     )
