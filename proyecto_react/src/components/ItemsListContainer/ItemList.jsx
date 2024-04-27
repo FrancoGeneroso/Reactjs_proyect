@@ -1,7 +1,7 @@
 
 import Item from "./Item"
 
-import './bienvenido.css'
+import './item.css'
 
 function ItemList({products}) {
   return (

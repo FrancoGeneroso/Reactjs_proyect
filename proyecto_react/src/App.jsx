@@ -5,6 +5,8 @@ import CartWidget from "./components/CartWidget/CartWidget"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Inicio from "./components/Inicio/Inicio"
 
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
+
 
 import "./index.css"
 
@@ -23,10 +25,9 @@ function App() {
       </Navbar>
 
       <Routes>
-        <Route  path="/inicio" element= {<Inicio/>} />
-        <Route  path="/productos" element= {<ItemsListContainer texto={"Bienvenido a la web con más SWAG del condado"}/>}/> 
-        <Route  path="/contacto" element= {<h2>Contacto</h2>}/>
-        <Route  path="/ayuda" element= {<h2>Ayuda</h2>}/>
+        <Route  path="/" element= {<ItemsListContainer texto={"Bienvenido a la web con más SWAG del condado"}/>}/>
+        <Route  path="/category/:idCategory" element= {<ItemsListContainer texto={"Bienvenido a la web con más SWAG del condado"}/>}/>  
+        <Route path="/detail/:idProduct" element= {<ItemDetailContainer/>}>/</Route>
         <Route  path="*" element={"Error ruta no encontrada"}/> 
       </Routes>
       

@@ -1,6 +1,6 @@
-import { useState,useEffect } from "react"
+import { useState,useEffect, } from "react"
 import ItemList from "./ItemList"
-
+import { useParams } from "react-router-dom"
 
 
 import "./item.css"
@@ -10,20 +10,23 @@ function ItemsListContainer({texto})
  
  {
   const [products,setProducts]=useState([])
+  const {idCategory}= useParams()
   
   useEffect(() => {
     fetch("https://run.mocky.io/v3/ec8e8c2a-92bd-4a2b-9368-83cec493b119")
-      .then(response=>{
-        if(!response.ok){
-          throw new Error("No puedo traer el producto")
+     .then(response => response.json()) // <--- Espera a que se resuelva la promesa
+     .then(productos => {
+        if (idCategory) {
+          const nuevoProductos = productos.filter((producto) => producto.category === idCategory)
+          setProducts(nuevoProductos)
+        } else {
+          setProducts(productos) // <--- Mostrar todos los productos si no hay categoría seleccionada
         }
-        return response.json()
       })
-      .then(data=>{setProducts(data)})
-      .catch(error=>{"Error",error})
-  ,[]}
+     .catch(error => console.error("Error", error))
+  }, [idCategory])
       
-  )
+  
   
     return (
       <>

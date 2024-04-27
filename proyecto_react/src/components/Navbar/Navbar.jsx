@@ -12,13 +12,16 @@ function Navbar({children}) {
     <>
       <nav className='navbar'>
         <div> 
-          <Link to="/" ><img className='logo' src={logo} alt="logo" href="/inicio"/></Link>
+          <Link to="/" ><img className='logo' src={logo} alt="logo"/></Link>
         </div>
         <ul className='navbar-links'>
-          <li className='navbar-items'><a className='ancla-items' href="/inicio">INICIO</a></li>
-          <li className='navbar-items'><a className='ancla-items' href="/productos">PRODUCTOS</a></li>
-          <li className='navbar-items'><a className='ancla-items' href="/contacto">CONTACTO</a></li>
-          <li className='navbar-items'><a className='ancla-items' href="/ayuda">AYUDA</a></li>
+
+          <Link to="/category/pantalon" className="ancla-items navbar-items">PANTALON</Link>
+          <Link to="/category/remera" className="ancla-items navbar-items">REMERAS</Link>
+          <Link to="/category/gorro" className="ancla-items navbar-items">GORROS</Link>
+          <Link to="/category/zapatos" className="ancla-items navbar-items">ZAPATOS</Link>
+          
+        
         </ul>
         <div className="carrito-position">
           {children}
