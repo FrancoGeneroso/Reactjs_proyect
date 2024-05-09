@@ -1,6 +1,7 @@
 
 import ItemDetailContainer from "./ItemDetailContainer"
-import './itemDetail.css'
+import "./itemDetail.css"
+import ItemCount from "./ItemCount"
 
 function ItemDetail({product}) {
   return (
@@ -11,6 +12,7 @@ function ItemDetail({product}) {
       <p className="item-detail-price">Precio: ${product.price}</p>
       {/*<ItemCount stock={item.stock} initial={1} />*/}
       <button className="boton-comprar">COMPRAR</button>
+      <ItemCount/>
     </div>
   )
 }

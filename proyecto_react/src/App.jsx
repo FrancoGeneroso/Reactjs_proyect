@@ -4,6 +4,7 @@ import ItemsListContainer from "./components/ItemsListContainer/ItemsListContain
 import CartWidget from "./components/CartWidget/CartWidget"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Inicio from "./components/Inicio/Inicio"
+import ItemCount from "./components/ItemDetailContainer/ItemCount"
 
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
 
@@ -27,7 +28,7 @@ function App() {
       <Routes>
         <Route  path="/" element= {<ItemsListContainer texto={"Bienvenido a la web con más SWAG del condado"}/>}/>
         <Route  path="/category/:idCategory" element= {<ItemsListContainer texto={"Bienvenido a la web con más SWAG del condado"}/>}/>  
-        <Route path="/detail/:idProduct" element= {<ItemDetailContainer/>}>/</Route>
+        <Route path="/detail/:idDetail" element= {<ItemDetailContainer/>}>/</Route>
         <Route  path="*" element={"Error ruta no encontrada"}/> 
       </Routes>
       

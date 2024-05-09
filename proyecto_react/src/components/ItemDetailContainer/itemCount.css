@@ -1,0 +1,38 @@
+.ItemCount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    width: 120px;
+  }
+  
+  .ItemCount button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: #a10000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .ItemCount button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .ItemCount button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ItemCount span {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+    color: #333;
+  }

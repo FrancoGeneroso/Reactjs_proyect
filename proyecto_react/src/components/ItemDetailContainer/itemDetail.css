@@ -2,11 +2,7 @@ body{
     background-color: antiquewhite;
   }
   
-  .bienvenido{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-    
-  }
+  
   
   .itemContainer{
     display: flex;
@@ -19,6 +15,11 @@ body{
   
   
   .item-detail {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
       max-width: 500px;
       margin-bottom: 20px;
       text-align: center;
@@ -30,9 +31,7 @@ body{
       background-color: lightgray;
     }
     
-    .item-detail:hover {
-      transform: translateY(-5px);
-    }
+    
     
     .item-detail-title {
       font-size: 2.5rem;
@@ -46,7 +45,7 @@ body{
       height: auto;
       border-radius: 5px;
       margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgb(43, 8, 8);
   
     }
     
